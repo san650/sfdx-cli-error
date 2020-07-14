@@ -50,6 +50,10 @@ package-b
 
 ## Make it fail 
 
+Pre-requisite:
+* UNIX like OS
+* Node v12.14.0
+
 I've added a custom bash script to reproduce the error. This scripts does the following things:
 
 1. Installs sfdx-cli@7.63.0 npm package version
