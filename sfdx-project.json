@@ -1,0 +1,15 @@
+{
+  "packageDirectories": [
+    {
+      "path": "package-b",
+      "default": true 
+    },
+    {
+      "path": "package-a",
+      "default": false 
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "48.0"
+}
