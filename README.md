@@ -75,3 +75,18 @@ Usage:
 ```
 $ ./run.sh https://<dev-hub>.my.salesforce.com
 ```
+
+Alternatively you can use login.salesforce.com
+
+```
+$ ./run.sh https://login.salesforce.com
+```
+
+## Without custom script
+
+```
+npm install --no-package-lock sfdx-cli@7.65.3
+npx sfdx force:auth:web:login --setdefaultdevhubusername --instanceurl https://login.salesforce.com/
+npx sfdx force:org:create --setdefaultusername --durationdays 1 edition=Developer
+npx sfdx force:source:push
+```
