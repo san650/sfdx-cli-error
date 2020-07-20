@@ -1,6 +1,6 @@
-# sfdx-cli@7.65.3 bug when pushing source to scratch-org
+# sfdx-cli@7.66.2 bug when pushing source to scratch-org
 
-This repo demostrates a regression error introduced in sfdx-cli version 7.65.3 by which we cannot push the source to a scratch org when:
+This repo demostrates a regression error introduced in sfdx-cli version 7.65.2 by which we cannot push the source to a scratch org when:
 
 * We have two packages, A and B
 * Package A defines a custom object e.g. `Fruit__c`
@@ -21,7 +21,7 @@ Try this:
 Check the order of your dependencies and ensure all metadata is included.
 ```
 
-**This error was introduced in sfdx-cli version 7.65.3. Works fine in sfdx-cli version 7.63.0**.
+**This error was introduced in sfdx-cli version 7.65.2. Works fine in sfdx-cli version 7.63.0**.
 
 
 I've added a sfdx project file with two packages, `package_a` and `package_b`
@@ -92,3 +92,11 @@ Alternatively you can use login.salesforce.com
 ```
 $ ./run.sh https://login.salesforce.com
 ```
+
+## Versions that fail
+
+* 7.65.2
+* 7.65.3
+* 7.65.4
+* 7.65.6
+* 7.66.2
