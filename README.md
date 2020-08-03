@@ -1,4 +1,4 @@
-# sfdx-cli@7.66.2 bug when pushing source to scratch-org
+# sfdx-cli@7.68.6 bug when pushing source to scratch-org
 
 This repo demostrates a regression error introduced in sfdx-cli version 7.65.2 by which we cannot push the source to a scratch org when:
 
@@ -53,7 +53,7 @@ package-b
 ### Without custom script
 
 ```
-npm install --no-package-lock sfdx-cli@7.65.3
+npm install --no-package-lock sfdx-cli@7.68.6
 npx sfdx force:auth:web:login --setdefaultdevhubusername --instanceurl https://login.salesforce.com/
 npx sfdx force:org:create --setdefaultusername --durationdays 1 edition=Developer
 npx sfdx force:source:push
@@ -75,7 +75,7 @@ I've added a custom bash script to reproduce the error. This scripts does the fo
 
 Then it does the same with the buggy version 
 
-1. Installs sfdx-cli@7.65.3 npm package version
+1. Installs sfdx-cli@7.68.6 npm package version
 2. Logs you in to your dev hub
 3. Creates a new scratch org
 4. Push the source code to the scratch org
@@ -100,3 +100,4 @@ $ ./run.sh https://login.salesforce.com
 * 7.65.4
 * 7.65.6
 * 7.66.2
+* 7.68.6
