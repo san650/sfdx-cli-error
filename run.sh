@@ -7,7 +7,7 @@ fi
 
 DEVHUB_INSTANCE_URL="$1"
 VERSION_A=7.63.0
-VERSION_B=7.68.6
+VERSION_B=7.69.0
 
 npm config set progress=false
 
